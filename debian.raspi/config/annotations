@@ -4,6 +4,8 @@
 
 include "../../debian.master/config/annotations"
 
+CONFIG_JOYSTICK_FSIA6B				policy<{'*': 'm'}> mark<ENFORCED> note<LP: #1995968>
+
 CONFIG_DRM_SIMPLEDRM				policy<{'*': 'n'}> mark<ENFORCED> note<LP: #1976147>
 CONFIG_FB_SIMPLE				policy<{'*': 'y'}> mark<ENFORCED> note<LP: #1976147>
 
