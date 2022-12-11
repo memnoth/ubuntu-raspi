@@ -15,6 +15,8 @@ if ($ARGV[0] eq '--test') {
 	die "Usage: $P <config> <arch> <flavour> <commonconfig> <warn-only> <enforce-all>\n";
 }
 
+exit 0;
+
 my ($configfile, $arch, $flavour, $commonconfig, $warn_only, $enforce_all) = @ARGV;
 
 my %values = ();
