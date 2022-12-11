@@ -22,3 +22,5 @@ do_doc_package		= false
 do_source_package	= false
 do_extras_package	= true
 do_zfs			= true
+
+do_full_source = true
