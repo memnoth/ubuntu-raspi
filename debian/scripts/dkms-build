@@ -219,8 +219,8 @@ while read module; do
 		cp "$module" "$pkgdir"
 		;;
 	*)
-		echo "signing $vmodule"
-		$sign "$module" "$pkgdir/$vmodule"
+		echo "copying2 $vmodule"
+		cp "$module" "$pkgdir/$vmodule"
 		;;
 	esac
 done
