@@ -44,6 +44,8 @@ do_tools_host?=false
 do_tools_perf_jvmti?=false
 do_enforce_all?=false
 
+do_stamps?=true
+
 # Default settings for DKMS modules.
 $(foreach _m,$(all_dkms_modules), \
   $(eval do_$(_m) ?= $(if $(filter $(_m),$(filter-out $(dkms_exclude),$(dkms_include) $(subst any,$(_m),$(subst $(arch),$(_m),$(dkms_$(_m)_archs))))),true,false)) \
